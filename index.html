@@ -3,29 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Galeria</title>
+    <style>
+        /*aca me permite escribir con css*/
+        /*fuente propia de google fonts*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(16, 16, 16);
+        }
+        .tituloPrincipal{
+            text-align: center;
+            margin-top:20px;
+            margin-bottom: 50px;
+            font-size: 2rem;
+            color:white;
+        }
+        .padre{
+            width:80%;
+            margin:0 auto;
+        }
+        .divImg{
+            display: inline-block;
+        }
+        .divImg img{
+            width:400px;
+            height: 400px;
+            object-fit: cover;
+           
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <section>
+        <h1 class="tituloPrincipal">Galeria</h1>
+        <div class="padre">
+            <div class="divImg">
+                <img src="../assets/img/bruja_escarlata.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/capitan_america.jpg" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/doctor_strange.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/iron_man.jpg" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/thor.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/Wanda_Maximoff.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/thor.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/doctor_strange.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/bruja_escarlata.webp" alt="">
+            </div>
 
-    </header>
-    <main class="main">
-        <section class="flex">
-            <div class="box">caja 1</div>
-            <div class="box">caja 2</div>
-            <div class="box">caja 3</div>
-            <div class="box">caja 4</div>
-            <div class="box">caja 5</div>
-            <div class="box">caja 6</div>
-            <div class="box">caja 7</div>
-            <div class="box">caja 8</div>
-            <div class="box">caja 9</div>
-        </section>
-       
-    </main>
-    <footer>
-
-    </footer>
+        </div>
+    </section>
+   
+    
 </body>
 </html>
