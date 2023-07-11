@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Flexbox</title>
+     <!--cdn herramientas en el servidor para iconos-->
+     <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
+    <style>
+        /*aca me permite escribir con css*/
+        /*fuente propia de google fonts*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(16, 16, 16);
+        }
+        .tituloPrincipal{
+            text-align: center;
+            margin-top:20px;
+            margin-bottom: 50px;
+            font-size: 2rem;
+            color:white;
+        }
+        .padre{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+           
+            /*align-content: center;*/
+        }
+        .divImg{
+            background-color: white;
+            width: 400px;
+            height:500px;
+           /* text-align: center;*/
+            border:1px solid rgb(20, 20, 20);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .divImg img{
+            border-radius: 5px;
+            width:90%;
+            height: 90%;
+            object-fit: cover;
+        }
+        .wsp{
+            position:fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+        .fa-whatsapp{
+            color:rgb(43, 220, 43);
+            font-size: 3rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <section>
+        <h1 class="tituloPrincipal">Galeria</h1>
+        <div class="padre">
+            <div class="divImg">
+                <img src="../assets/img/bruja_escarlata.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/capitan_america.jpg" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/doctor_strange.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/iron_man.jpg" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/thor.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/Wanda_Maximoff.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/thor.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/doctor_strange.webp" alt="">
+            </div>
+            <div class="divImg">
+                <img src="../assets/img/bruja_escarlata.webp" alt="">
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="wsp">
+            <a href="https://toolsdw.netlify.app/" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-bounce"></i>
+            </a>
+        </div>
+      
+    </footer>
+   
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.flex{
+    height: 70vh;/*ocupa el 50% del navegador*/
+    background-color: pink;
+    border:1px solid grey;
+    display: flex;/*los hijos del elemento flexible pasan a ser flexs-items*/
+    flex-direction: row; /*valor por defecto que hace que el padre sea una fila */
+    flex-direction: column;
+    align-items: stretch;/*valor por defecto que si los hijos no tienen un alto establecido, entonces se estrechan para ocupar todo el alto del padre*/
+    justify-content: flex-start;/*este valor por defecto alinea en el eje principal del contenedor padre, siempre pegado al left si es una row y al top si es una column*/
+    flex-wrap: nowrap;/*valor por defecto*/
+    justify-content:center ;
+    align-items: center;
+    /*justify-content alinea en el eje principal del contenedor
+    aling-items alinea a los hijos en el eje contrario al contenedor*/
+    flex-wrap: wrap;/*si los hijos tienen un tamaño fijo y no entran en su contenedor padre, que no se aplasten, se formara otra columna en el caso de que el padre sea una column o se formara otra fila si el padre es una row*/
+    flex-direction:column;
+    align-content: center;/*unicamente actua cuando tenes hijos que no entran en su contenedor padre y tienen un tamaño fijo establecido y esta la propiedad flex-wrap : wrap, esta propiedad actua sobre las filas de hijos o sobre las columnas de hijos*/
+   /* justify-content:space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: flex-end;
+    align-items:flex-start;
+    align-items: end;*/
+   
+   /* padding-right: 20px;
+    padding-top: 20px;*/
+}
+
+.box{
+     background-color: rgb(130, 137, 238);
+     border: 1px solid black;
+     text-align: center;
+     font-size:1.2rem;
+     height: 200px;
+     width:200px;
+    /* width:100px;*/
+    /* display: inline-block;*/
+     
+}
